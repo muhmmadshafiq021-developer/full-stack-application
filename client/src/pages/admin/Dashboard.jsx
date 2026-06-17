@@ -175,7 +175,9 @@ const Dashboard = () => {
                         </button>
 
                         <button className="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium hover:bg-slate-50">
-                            Add Category
+                            <Link to="/admin/categories">
+                                Manage Categories
+                            </Link>
                         </button>
 
                         <button className="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium hover:bg-slate-50">
