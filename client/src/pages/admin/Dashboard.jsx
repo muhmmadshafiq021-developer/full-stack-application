@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
     return (
@@ -16,7 +17,9 @@ const Dashboard = () => {
                 </div>
 
                 <button className="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">
-                    + New Blog
+                    <Link to="/admin/blogs/add">
+                        + New Blog
+                    </Link>
                 </button>
             </div>
 
@@ -166,7 +169,9 @@ const Dashboard = () => {
                     <div className="space-y-3">
 
                         <button className="w-full rounded-xl bg-slate-900 px-4 py-3 font-medium text-white transition hover:bg-slate-800">
-                            Add New Blog
+                            <Link to="/admin/blogs/add">
+                                Add New Blog
+                            </Link>
                         </button>
 
                         <button className="w-full rounded-xl border border-slate-200 px-4 py-3 font-medium hover:bg-slate-50">
