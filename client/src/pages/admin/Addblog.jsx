@@ -18,57 +18,62 @@ const Addblog = () => {
 
                             <div>
                                 <label className="mb-2 block font-medium">
-                                    Blog Title
+                                    Blog Title   <span className="text-red-500">*</span>
                                 </label>
                                 <input
                                     type="text"
+                                    required
                                     className="w-full rounded-xl border border-slate-300 p-3 outline-none focus:border-slate-900"
                                 />
                             </div>
 
                             <div>
                                 <label className="mb-2 block font-medium">
-                                    Slug
+                                    Slug     <span className="text-red-500">*</span>
                                 </label>
                                 <input
                                     type="text"
+                                    required
                                     className="w-full rounded-xl border border-slate-300 p-3 outline-none focus:border-slate-900"
                                 />
                             </div>
 
                             <div>
                                 <label className="mb-2 block font-medium">
-                                    Meta Title
+                                    Meta Title      <span className="text-red-500">*</span>
                                 </label>
                                 <input
                                     type="text"
+                                    required
                                     className="w-full rounded-xl border border-slate-300 p-3 outline-none focus:border-slate-900"
                                 />
                             </div>
 
                             <div>
                                 <label className="mb-2 block font-medium">
-                                    Focus Keyword
+                                    Focus Keyword      <span className="text-red-500">*</span>
                                 </label>
                                 <input
                                     type="text"
+                                    required
                                     className="w-full rounded-xl border border-slate-300 p-3 outline-none focus:border-slate-900"
                                 />
                             </div>
 
                             <div className="md:col-span-2">
                                 <label className="mb-2 block font-medium">
-                                    Meta Description
+                                    Meta Description    <span className="text-red-500">*</span>
                                 </label>
                                 <textarea
                                     rows="4"
+                                    required
                                     className="w-full rounded-xl border border-slate-300 p-3 outline-none focus:border-slate-900"
                                 />
                             </div>
 
                             <div>
                                 <label className="mb-2 block font-medium">
-                                    Category
+                                    Category   <span className="text-red-500">*</span>
                                 </label>
                                 <select className="w-full rounded-xl border border-slate-300 p-3">
                                     <option>Select Category</option>
@@ -77,10 +82,11 @@ const Addblog = () => {
 
                             <div>
                                 <label className="mb-2 block font-medium">
-                                    Tags
+                                    Tags   <span className="text-red-500">*</span>
                                 </label>
                                 <input
                                     type="text"
+                                    required
                                     placeholder="react, mern, seo"
                                     className="w-full rounded-xl border border-slate-300 p-3"
                                 />
@@ -88,40 +94,44 @@ const Addblog = () => {
 
                             <div>
                                 <label className="mb-2 block font-medium">
-                                    Featured Image
+                                    Featured Image    <span className="text-red-500">*</span>
                                 </label>
                                 <input
                                     type="file"
+                                    required
                                     className="w-full rounded-xl border border-slate-300 p-3"
                                 />
                             </div>
 
                             <div>
                                 <label className="mb-2 block font-medium">
-                                    Image Alt Text
+                                    Image Alt Text      <span className="text-red-500">*</span>
                                 </label>
                                 <input
                                     type="text"
+                                    required
                                     className="w-full rounded-xl border border-slate-300 p-3"
                                 />
                             </div>
 
                             <div className="md:col-span-2">
                                 <label className="mb-2 block font-medium">
-                                    Excerpt
+                                    Excerpt     <span className="text-red-500">*</span>
                                 </label>
                                 <textarea
                                     rows="4"
+                                    required
                                     className="w-full rounded-xl border border-slate-300 p-3"
                                 />
                             </div>
 
                             <div className="md:col-span-2">
                                 <label className="mb-2 block font-medium">
-                                    Content
+                                    Content      <span className="text-red-500">*</span>
                                 </label>
                                 <textarea
                                     rows="12"
+                                    required
                                     className="w-full rounded-xl border border-slate-300 p-3"
                                 />
                             </div>
@@ -138,7 +148,7 @@ const Addblog = () => {
 
                             <div>
                                 <label className="mb-2 block font-medium">
-                                    Schema Type
+                                    Schema Type     <span className="text-red-500">*</span>
                                 </label>
                                 <select className="w-full rounded-xl border border-slate-300 p-3">
                                     <option>Article</option>
@@ -158,7 +168,7 @@ const Addblog = () => {
 
                             <div>
                                 <label className="mb-2 block font-medium">
-                                    Status
+                                    Status   <span className="text-red-500">*</span>
                                 </label>
                                 <select className="w-full rounded-xl border border-slate-300 p-3">
                                     <option>Published</option>
@@ -168,10 +178,11 @@ const Addblog = () => {
 
                             <div>
                                 <label className="mb-2 block font-medium">
-                                    Author
+                                    Author   <span className="text-red-500">*</span>
                                 </label>
                                 <input
                                     type="text"
+                                    required
                                     className="w-full rounded-xl border border-slate-300 p-3"
                                 />
                             </div>
@@ -182,6 +193,7 @@ const Addblog = () => {
                                 </label>
                                 <input
                                     type="date"
+                                    
                                     className="w-full rounded-xl border border-slate-300 p-3"
                                 />
                             </div>
