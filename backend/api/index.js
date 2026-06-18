@@ -1,12 +1,14 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import ConnectDB from "./config/db.js";
+import serverless from "serverless-http";
+import ConnectDB from "../config/db.js";
 
 dotenv.config();
 
 const app = express();
 
+// Database Connection
 ConnectDB();
 
 app.use(cors());
@@ -16,8 +18,5 @@ app.get("/", (req, res) => {
   res.send("Backend Server Running with accurate data...");
 });
 
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// Export for Vercel
+export default serverless(app);
