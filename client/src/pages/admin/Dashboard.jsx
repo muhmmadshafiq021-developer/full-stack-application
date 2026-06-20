@@ -1,7 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {
+    MoreVertical, Eye,
+    Pencil,
+    RefreshCw,
+    Trash2
+} from 'lucide-react';
+import { useState } from 'react';
 
 const Dashboard = () => {
+
+    const [openRow, setOpenRow] = useState(null);
+
     return (
 
         <div className="min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-purple-100 p-6">
@@ -120,12 +130,15 @@ const Dashboard = () => {
                                     <th className="py-3 text-left text-sm text-slate-500">
                                         Date
                                     </th>
+                                    <th className="py-3 text-left text-sm text-slate-500">
+                                        Actions
+                                    </th>
                                 </tr>
                             </thead>
 
                             <tbody>
 
-                                <tr className="border-b border-slate-100">
+                                <tr className="border-b border-slate-100" key="1">
                                     <td className="py-4 font-medium">
                                         Getting Started with MERN
                                     </td>
@@ -135,9 +148,41 @@ const Dashboard = () => {
                                         </span>
                                     </td>
                                     <td>16 Jun 2026</td>
+                                    <td className="relative text-right">
+                                        <button
+                                            onClick={() => setOpenRow(openRow === 1 ? null : 1)}
+                                            className="rounded p-2 hover:bg-slate-100"
+                                        >
+                                            <MoreVertical size={18} />
+                                        </button>
+
+                                        {openRow === 1 && (
+                                            <div className="absolute right-0 z-10 mt-2 w-40 rounded-lg border bg-white shadow-lg">
+                                                <button className="block w-full px-4 py-2 text-left hover:bg-slate-100">
+                                                    <Eye size={16} className="inline mr-2" />
+                                                    Open
+                                                </button>
+
+                                                <button className="block w-full px-4 py-2 text-left hover:bg-slate-100">
+                                                    <Pencil size={16} className="inline mr-2" />
+                                                    Edit
+                                                </button>
+
+                                                <button className="block w-full px-4 py-2 text-left hover:bg-slate-100">
+                                                    <RefreshCw size={16} className="inline mr-2" />
+                                                    Update
+                                                </button>
+
+                                                <button className="block w-full px-4 py-2 text-left text-red-600 hover:bg-red-50">
+                                                    <Trash2 size={16} className="inline mr-2" />
+                                                    Delete
+                                                </button>
+                                            </div>
+                                        )}
+                                    </td>
                                 </tr>
 
-                                <tr className="border-b border-slate-100">
+                                <tr className="border-b border-slate-100" key="2">
                                     <td className="py-4 font-medium">
                                         React Router Guide
                                     </td>
@@ -147,9 +192,41 @@ const Dashboard = () => {
                                         </span>
                                     </td>
                                     <td>15 Jun 2026</td>
+                                    <td className="relative text-right">
+                                        <button
+                                            onClick={() => setOpenRow(openRow === 2 ? null : 2)}
+                                            className="rounded p-2 hover:bg-slate-100"
+                                        >
+                                            <MoreVertical size={18} />
+                                        </button>
+
+                                        {openRow === 2 && (
+                                            <div className="absolute right-0 z-10 mt-2 w-40 rounded-lg border bg-white shadow-lg">
+                                                <button className="block w-full px-4 py-2 text-left hover:bg-slate-100">
+                                                    <Eye size={16} className="inline mr-2" />
+                                                    Open
+                                                </button>
+
+                                                <button className="block w-full px-4 py-2 text-left hover:bg-slate-100">
+                                                    <Pencil size={16} className="inline mr-2" />
+                                                    Edit
+                                                </button>
+
+                                                <button className="block w-full px-4 py-2 text-left hover:bg-slate-100">
+                                                    <RefreshCw size={16} className="inline mr-2" />
+                                                    Update
+                                                </button>
+
+                                                <button className="block w-full px-4 py-2 text-left text-red-600 hover:bg-red-50">
+                                                    <Trash2 size={16} className="inline mr-2" />
+                                                    Delete
+                                                </button>
+                                            </div>
+                                        )}
+                                    </td>
                                 </tr>
 
-                                <tr>
+                                <tr key="3">
                                     <td className="py-4 font-medium">
                                         MongoDB Atlas Setup
                                     </td>
@@ -159,6 +236,39 @@ const Dashboard = () => {
                                         </span>
                                     </td>
                                     <td>14 Jun 2026</td>
+                                    <td className="relative text-right">
+                                        <button
+                                            onClick={() => setOpenRow(openRow === 3 ? null : 3)}
+                                            className="rounded p-2 hover:bg-slate-100 foucs:outline-none"
+                                        >
+                                            <MoreVertical size={18} />
+                                        </button>
+
+                                        {openRow === 3 && (
+                                            <div className="absolute right-0 z-10 mt-2 w-40 rounded-lg border bg-white shadow-lg">
+                                                <button className="block w-full px-4 py-2 text-left hover:bg-slate-100">
+                                                    <Eye size={16} className="inline mr-2" />
+                                                    Open
+                                                </button>
+
+                                                <button className="block w-full px-4 py-2 text-left hover:bg-slate-100">
+                                                    <Pencil size={16} className="inline mr-2" />
+                                                    Edit
+                                                </button>
+
+                                                <button className="block w-full px-4 py-2 text-left hover:bg-slate-100">
+                                                    <RefreshCw size={16} className="inline mr-2" />
+                                                    Update
+                                                </button>
+
+                                                <button className="block w-full px-4 py-2 text-left text-red-600 hover:bg-red-50">
+                                                    <Trash2 size={16} className="inline mr-2" />
+                                                    Delete
+                                                </button>
+                                            </div>
+                                        )}
+                                    </td>
+
                                 </tr>
 
                             </tbody>
