@@ -111,7 +111,7 @@ const Dashboard = () => {
                             </h2>
                             <div className="mt-1 h-1 w-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded"></div>
                         </div>
-                        <button className="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                        <button className="text-sm cursor-pointer font-medium text-blue-500 hover:text-blue-700 hover:underline-none">
                             View All
                         </button>
                     </div>
