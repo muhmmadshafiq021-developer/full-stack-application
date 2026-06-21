@@ -290,19 +290,19 @@ const Dashboard = () => {
 
                     <div className="mt-5 space-y-3">
 
-                        <button className="w-full rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 px-4 py-3 font-medium text-white transition hover:shadow-lg hover:from-blue-700 hover:to-blue-800">
+                        <button className="w-full cursor-pointer rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 px-4 py-3 font-medium text-white transition hover:shadow-lg hover:from-blue-700 hover:to-blue-800">
                             <Link to="/admin/blogs/add">
                                 Add New Blog
                             </Link>
                         </button>
 
-                        <button className="w-full rounded-xl border-2 border-purple-500 px-4 py-3 font-medium text-purple-600 transition hover:bg-purple-50 hover:border-purple-600">
+                        <button className="w-full cursor-pointer rounded-xl border-2 border-purple-500 px-4 py-3 font-medium text-purple-600 transition hover:bg-purple-50 hover:border-purple-600">
                             <Link to="/admin/categories">
                                 Manage Categories
                             </Link>
                         </button>
 
-                        <button className="w-full rounded-xl border-2 border-emerald-500 px-4 py-3 font-medium text-emerald-600 transition hover:bg-emerald-50 hover:border-emerald-600">
+                        <button className="w-full cursor-pointer rounded-xl border-2 border-emerald-500 px-4 py-3 font-medium text-emerald-600 transition hover:bg-emerald-50 hover:border-emerald-600">
                             Manage Users
                         </button>
 

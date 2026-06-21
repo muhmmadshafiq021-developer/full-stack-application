@@ -1,4 +1,5 @@
 import React from 'react';
+import {Pencil, Trash2} from 'lucide-react';
 
 const Categories = () => {
     return (
@@ -141,10 +142,12 @@ const Categories = () => {
                                             <div className="flex gap-2">
 
                                                 <button className="rounded-lg bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700">
+                                                    <Pencil size={16} className="inline mr-2" />
                                                     Edit
                                                 </button>
 
                                                 <button className="rounded-lg bg-red-100 px-3 py-1 text-sm font-medium text-red-700">
+                                                    <Trash2 size={16} className="inline mr-2" />
                                                     Delete
                                                 </button>
 
@@ -167,10 +170,12 @@ const Categories = () => {
                                             <div className="flex gap-2">
 
                                                 <button className="rounded-lg bg-blue-100 px-3 py-1 text-sm font-medium text-blue-700">
+                                                    <Pencil size={16} className="inline mr-2" />
                                                     Edit
                                                 </button>
 
                                                 <button className="rounded-lg bg-red-100 px-3 py-1 text-sm font-medium text-red-700">
+                                                    <Trash2 size={16} className="inline mr-2" />
                                                     Delete
                                                 </button>
 
