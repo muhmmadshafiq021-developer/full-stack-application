@@ -26,7 +26,7 @@ const Dashboard = () => {
                     </p>
                 </div>
 
-                <button className="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">
+                <button className="rounded-xl cursor-pointer bg-slate-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">
                     <Link to="/admin/blogs/add">
                         + New Blog
                     </Link>
