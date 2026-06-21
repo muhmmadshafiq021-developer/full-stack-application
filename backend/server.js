@@ -20,9 +20,9 @@ app.get("/", (req, res) => {
   res.send("Backend Server Running with accurate data...");
 });
 
-app.use("/api/blogs", blogRoutes);
-app.use("/api/categories", categoryRoutes);
-app.use("/api/dashboard", dashboardRoutes);
+app.use("/api/v1/blogs", blogRoutes);
+app.use("/api/v1/categories", categoryRoutes);
+app.use("/api/v1/dashboard", dashboardRoutes);
 
 app.use(notFound);
 app.use(errorHandler);
