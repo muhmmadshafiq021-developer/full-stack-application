@@ -1,6 +1,22 @@
-import React from 'react'
+import React from 'react';
+import { submitBlog } from '../../services/blogServices';
 
 const Addblog = () => {
+
+    const handleSubmit = async () => {
+        const blogData = {
+
+        };
+
+        try {
+            const response = await submitBlog(blogData);
+            console.log("Blog submitted successfully:", response);
+        } catch (error) {
+            console.log("Error submitting blog:", error);
+        }    
+            
+    };    
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-purple-100 p-6">
 
