@@ -1,5 +1,6 @@
 import React from 'react';
 import { submitBlog } from '../../services/blogServices';
+import { toast } from 'react-toastify';
 
 const Addblog = () => {
 
@@ -10,9 +11,9 @@ const Addblog = () => {
 
         try {
             const response = await submitBlog(blogData);
-            console.log("Blog submitted successfully:", response);
+            toast.success(response.message || "Blog submitted successfully!");
         } catch (error) {
-            console.log("Error submitting blog:", error);
+            toast.error(error.response?.data?.message || "Error submitting blog. Please try again.");
         }    
             
     };    
